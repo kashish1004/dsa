@@ -1,0 +1,70 @@
+# =========================
+# STS / Eclipse
+# =========================
+.project
+.classpath
+.settings/
+.sts4-cache/
+
+# =========================
+# IntelliJ (if opened there)
+# =========================
+.idea/
+*.iml
+
+# =========================
+# VS Code (optional)
+# =========================
+.vscode/
+
+# =========================
+# Maven
+# =========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# =========================
+# Java
+# =========================
+*.class
+*.log
+hs_err_pid*
+
+# =========================
+# Spring Boot
+# =========================
+*.jar
+*.war
+*.ear
+*.nar
+application-local.yml
+application-local.properties
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
