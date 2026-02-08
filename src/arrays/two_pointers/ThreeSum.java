@@ -58,7 +58,7 @@ public class ThreeSum {
     }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int[] nums = {0,0,0};
 		System.out.println(threeSum(nums));
 		
