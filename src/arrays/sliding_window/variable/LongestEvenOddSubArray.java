@@ -1,4 +1,4 @@
-package arrays.sliding_window;
+package arrays.sliding_window.variable;
 
 /* 
  * Problem Description:
