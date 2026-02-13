@@ -32,6 +32,8 @@ Algorithms that do not belong to any specific data structure are stored separate
 │   ├── 📂 sorting
 │   ├── 📂 two_pointers
 │   └── 📂 sliding_window
+│   │   └── 📂 fixed
+│   │   └── 📂 variable
 │
 ├── 📂 linked_list
 │   ├── 📂 traversal
