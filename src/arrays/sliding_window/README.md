@@ -60,6 +60,32 @@ Find the length of the longest subarray with sum ≤ `S`.
 - Expand the window by moving `right`.
 - Shrink the window by moving `left` when the condition is violated.
 
+Below is the template for Variable size sliding window approach:
+
+```java
+int left = 0;
+// Initialize your window state (e.g., sum, map, set, counter)
+int result = 0;
+
+for (int right = 0; right < arr.length; right++) {
+
+    // 1️⃣ Expand window
+    // Add arr[right] to your window state
+    // e.g., windowSum += arr[right]; or map.put(arr[right], map.getOrDefault(arr[right], 0) + 1);
+
+    // 2️⃣ Shrink while window is invalid
+    // windowIsInvalid() is the problem specific condition 
+    while (windowIsInvalid()) {
+        // Remove arr[left] from your window state
+        // e.g., windowSum -= arr[left]; or decrement count in map
+        left++;
+    }
+
+    // 3️⃣ Update answer
+    // e.g., result = Math.max(result, right - left + 1);
+}
+```
+
 #### Example
 Array: `[2, 1, 5, 2, 3]`  
 `S = 7`
