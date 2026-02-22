@@ -34,6 +34,18 @@ Algorithms that do not belong to any specific data structure are stored separate
 │   └── 📂 sliding_window
 │   │   └── 📂 fixed
 │   │   └── 📂 variable
+│   ├── 📂 cumulative_techniques
+│   │   └── 📂 prefix_sum
+│   │   └── 📂 difference_array
+│   │   └── 📂 prefix_product
+│   ├── 📂 kadane_pattern
+│   ├── 📂 rearrangement
+│   │   └── 📂 rotate_array
+│   │   └── 📂 next_permutation
+│   │   └── 📂 dutch_national_flag
+│   ├── 📂 intervals
+│   │   └── 📂 merge_intervals
+│   │   └── 📂 insert_interval
 │
 ├── 📂 linked_list
 │   ├── 📂 traversal
@@ -84,7 +96,7 @@ Algorithms that do not belong to any specific data structure are stored separate
 └── README.md
 ```
 
-> **Note:** The repository structure described above reflects a planned layout. Some directories or files may not exist yet as the project is still under active development.
+> **Note:** The repository structure described above reflects a planned layout. Some directories or files may not exist yet as the project is still under active development. The structure may also be updated as necessary, and all such changes will be reflected above.
 
 
 ---
