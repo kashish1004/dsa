@@ -8,7 +8,7 @@ Sorting an array is a fundamental topic in programming and is especially rich be
 
 ### 💡 Idea:
 
-Repeatedly swap adjacent elements if they are in the wrong order.
+Repeatedly swap adjacent elements if they are in the wrong order. More info [here](docs/bubble_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -52,7 +52,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Find the minimum element in the unsorted portion of the array and place it with the first element of that unsorted portion, then repeat.
+Find the minimum element in the unsorted portion of the array and place it with the first element of that unsorted portion, then repeat. More info [here](docs/selection_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -86,7 +86,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Insert each element into its correct position in a sorted part.
+Insert each element into its correct position in a sorted part. More info [here](docs/insertion_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -119,7 +119,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Divide array into halves → sort → merge
+Divide array into halves → sort → merge. More info [here](docs/merge_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -164,7 +164,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Pick a pivot and partition around it
+Pick a pivot and partition around it. More info [here](docs/quick_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -210,7 +210,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Convert array into a heap and extract max repeatedly
+Convert array into a heap and extract max repeatedly. More info [here](docs/heap_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -261,7 +261,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Count occurrences of each element
+Count occurrences of each element. More info [here](docs/counting_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -297,7 +297,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Sort digit by digit (uses counting sort internally)
+Sort digit by digit (uses counting sort internally). More info [here](docs/radix_sort.md)
 
 ```java
 public class Main {
@@ -354,9 +354,147 @@ public class Main {
 
 ---
 
-## 🔥 When to Use What
+## Stability
 
-* ✅ **Use Quick Sort / Merge Sort** → interviews
-* ✅ **Use Counting/Radix** → when numbers are limited range
-* ❌ Avoid Bubble/Selection → except for learning
+A sorting algorithm is **stable** if two elements with the same value maintain their original relative order after sorting.
+
+For example:
+
+```text
+Before:
+[5(A), 3, 5(B), 2]
+
+After stable sorting:
+[2, 3, 5(A), 5(B)]
+```
+Here, **5(A)** was originally before **5(B)**, and it remains before **5(B)**.
+
+### Why is Stability Important?
+
+Stability is useful when sorting objects by multiple fields.
+
+For example, if students are first sorted by **name** and then by **marks**, a stable sort can preserve the previous ordering when marks are equal.
+
+## In-place vs Extra Space
+
+An **in-place sorting algorithm** sorts the array using a small amount of additional memory, usually **O(1)** auxiliary space.
+
+| Algorithm      | In-place |
+| -------------- | -------- |
+| Bubble Sort	 | Yes      |
+| Selection Sort | Yes      |
+| Insertion Sort | Yes      |
+| Merge Sort	 | No       |
+| Quick Sort	 | Yes*     |
+| Heap Sort	     | Yes      |
+| Counting Sort	 | No       |
+| Radix Sort	 | No       |
+
+
+> Note: Quick Sort is generally considered in-place because the partitioning happens inside the original array, but its recursive calls require stack space.
+
+## Complexity Comparison
+
+| Algorithm      | Best       | Average    | Worst      | Extra Space |
+| -------------- | ---------- | ---------- | ---------- | ----------- |
+| Bubble Sort	 | O(n)       |	O(n²)	   | O(n²)      | O(1)        |
+| Selection Sort | O(n²)      |	O(n²)      | O(n²)      | O(1)        |
+| Insertion Sort | O(n)       |	O(n²)      | O(n²)      | O(1)        |
+| Merge Sort	 | O(n log n) |	O(n log n) | O(n log n) | O(n)        |
+| Quick Sort	 | O(n log n) |	O(n log n) | O(n²)      | O(log n)*   |
+| Heap Sort	     | O(n log n) |	O(n log n) | O(n log n) | O(1)        |
+| Counting Sort	 | O(n + k)	  | O(n + k)   | O(n + k)   | O(k)        |
+| Radix Sort	 | O(dn)	  | O(dn)      | O(dn)	    | O(n + k)    |
+
+```
+k = range of values / base used by the algorithm
+d = number of digits
+* Quick Sort's average recursive stack space is O(log n), but it can become O(n) in the worst case.
+```
+
+## Java Built-in Sorting
+In real-world Java applications, you usually don't need to implement sorting algorithms yourself. Java provides built-in sorting methods through the standard library.
+
+### Arrays.sort()
+
+For primitive arrays:
+
+```java
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {5, 2, 9, 1, 3};
+
+        Arrays.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
+}
+```
+
+Output:
+
+```java
+[1, 2, 3, 5, 9]
+```
+
+For object arrays, you can also provide a comparator:
+
+```java
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Main {
+    public static void main(String[] args) {
+        Integer[] arr = {5, 2, 9, 1, 3};
+
+        Arrays.sort(arr, Comparator.reverseOrder());
+
+        System.out.println(Arrays.toString(arr));
+    }
+}
+```
+
+### Collections.sort()
+
+For lists:
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(5, 2, 9, 1, 3);
+
+        Collections.sort(numbers);
+
+        System.out.println(numbers);
+    }
+}
+```
+
+You can also use sort() method of list:
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(5, 2, 9, 1, 3);
+
+        numbers.sort(Comparator.reverseOrder());
+
+        System.out.println(numbers);
+    }
+}
+```
+
+```text
+For interviews and DSA practice, implementing sorting algorithms is important for understanding how they work. In production code, prefer Java's built-in sorting methods unless you have a specific reason to implement your own.
+```
+
+
+
+
 
