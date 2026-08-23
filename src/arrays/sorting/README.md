@@ -8,7 +8,7 @@ Sorting an array is a fundamental topic in programming and is especially rich be
 
 ### 💡 Idea:
 
-Repeatedly swap adjacent elements if they are in the wrong order. More info [here](docs/bubble_sort.md)
+Repeatedly swap adjacent elements if they are in the wrong order. More info [here](/docs/sorting/bubble_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -52,7 +52,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Find the minimum element in the unsorted portion of the array and place it with the first element of that unsorted portion, then repeat. More info [here](docs/selection_sort.md)
+Find the minimum element in the unsorted portion of the array and place it with the first element of that unsorted portion, then repeat. More info [here](/docs/sorting/selection_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -86,7 +86,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Insert each element into its correct position in a sorted part. More info [here](docs/insertion_sort.md)
+Insert each element into its correct position in a sorted part. More info [here](/docs/sorting/insertion_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -119,7 +119,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Divide array into halves → sort → merge. More info [here](docs/merge_sort.md)
+Divide array into halves → sort → merge. More info [here](/docs/sorting/merge_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -164,7 +164,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Pick a pivot and partition around it. More info [here](docs/quick_sort.md)
+Pick a pivot and partition around it. More info [here](/docs/sorting/quick_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -210,7 +210,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Convert array into a heap and extract max repeatedly. More info [here](docs/heap_sort.md)
+Convert array into a heap and extract max repeatedly. More info [here](/docs/sorting/heap_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -261,7 +261,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Count occurrences of each element. More info [here](docs/counting_sort.md)
+Count occurrences of each element. More info [here](/docs/sorting/counting_sort.md)
 
 ### ⏱ Time Complexity:
 
@@ -297,7 +297,7 @@ public class Main {
 
 ### 💡 Idea:
 
-Sort digit by digit (uses counting sort internally). More info [here](docs/radix_sort.md)
+Sort digit by digit (uses counting sort internally). More info [here](/docs/sorting/radix_sort.md)
 
 ```java
 public class Main {
