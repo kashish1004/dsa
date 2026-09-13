@@ -31,7 +31,7 @@ Find the smallest element in the entire array:
         smallest
 ```
 
-The smallest element is **1**. Swap it with the first element, **5**:
+The smallest element is **1**. Swap it with the element at index 0, **5**:
 
 ```text
 [1, 2, 9, 5, 3]
@@ -59,7 +59,7 @@ The smallest remaining element is **2**. It is already in the correct position, 
 
 ### Pass 3
 
-Find the smallest element in the remaining unsorted part:
+Find the smallest element in the remaining array:
 
 ```text
 [1, 2, 9, 5, 3]
@@ -67,7 +67,7 @@ Find the smallest element in the remaining unsorted part:
         smallest
 ```
 
-The smallest element is **3**. Swap it with **9**:
+The smallest element is **3**. Swap it with the element at index 2, **9**:
 
 ```text
 [1, 2, 3, 5, 9]

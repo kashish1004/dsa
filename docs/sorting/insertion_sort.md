@@ -36,10 +36,12 @@ Then insert **1** and **3** into their correct positions:
 
 Each step grows the sorted portion on the left:
 
-~~~text
-[5] | [2, 9, 1, 3]
-[2, 5] | [9, 1, 3]
-[2, 5, 9] | [1, 3]
-[1, 2, 5, 9] | [3]
-[1, 2, 3, 5, 9] | []
-~~~
+
+| Step | Sorted Portion  | Unsorted portion |
+|------|-----------------|------------------|
+| 0    | [5]             | [2, 9, 1, 3]     |
+| 1    | [2, 5]          | [9, 1, 3]        |
+| 2    | [2, 5, 9]       | [1, 3]           |
+| 3    | [1, 2, 5, 9]    | [3]              |
+| 4    | [1, 2, 3, 5, 9] | []               |
+
