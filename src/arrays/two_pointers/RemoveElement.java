@@ -10,7 +10,7 @@ package arrays.two_pointers;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/remove-element/description/
+ * LeetCode problem link - https://leetcode.com/problems/remove-element/description/
  * */
 
 /*
@@ -32,7 +32,7 @@ public class RemoveElement {
         return index;
 	}
 
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = { 0,1,2,2,3,0,4,2 };
 		int val = 2;
 		int index = removeElement(nums, val);

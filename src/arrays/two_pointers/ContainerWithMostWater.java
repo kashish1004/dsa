@@ -10,7 +10,7 @@ package arrays.two_pointers;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/container-with-most-water/description/
+ * LeetCode problem link - https://leetcode.com/problems/container-with-most-water/description/
  * */
 
 
@@ -44,7 +44,7 @@ public class ContainerWithMostWater {
         return max;
     }
     
-    public static void main(String[] args) {
+    void main() {
 		int[] height = {1,8,6,2,5,4,8,3,7};
 		int answer = maxArea(height);
 		System.out.println("answer is : "+ answer);

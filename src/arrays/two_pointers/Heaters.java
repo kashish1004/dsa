@@ -16,13 +16,13 @@ import java.util.Arrays;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/heaters/description/
+ * LeetCode problem link - https://leetcode.com/problems/heaters/description/
  * */
 
 /*
- * Time Complexity:- O(n log m + n log n) → sorting houses O(n log n) + for each house binary search in heaters O(n log m)
+ * Time Complexity:- O(nlogm + nlogn) → sorting houses O(nlogn) + for each house binary search in heaters O(nlogm)
  * 
- * Space Complexity:-  O(1) extra (ignoring input sorting)
+ * Space Complexity:- O(1) extra (ignoring input sorting)
  * */
 
 public class Heaters {
@@ -30,10 +30,9 @@ public class Heaters {
 	public static int findRadius(int[] houses, int[] heaters) {
         Arrays.sort(houses);
         Arrays.sort(heaters);
-        int n = houses.length;
         int maxRadius = 0;
-        for(int i = 0; i < n; i++){
-            maxRadius = Math.max(maxRadius,findNearestHeater(heaters,houses[i]));
+        for (int house : houses) {
+            maxRadius = Math.max(maxRadius, findNearestHeater(heaters, house));
         }
 
         return maxRadius;
@@ -41,7 +40,7 @@ public class Heaters {
 
     static int findNearestHeater(int[] heaters, int housePosition){
         int leftNearestHeater = -1, rightNearestHeater = -1;
-        int low = 0, high = 0, mid = 0;
+        int low, high, mid;
         // find left nearest heater for house in housePosition with binary search
         low = 0;
         high = heaters.length - 1;
@@ -77,7 +76,7 @@ public class Heaters {
         return Math.min(leftDist, rightDist);
     }
 
-	public static void main(String[] args) {
+	void main() {
 		
 		int[] heaters = {1,2,3}; 
 		int[] houses = {2};

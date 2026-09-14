@@ -37,7 +37,7 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    void main() {
         int[] arr = {5, 2, 9, 1, 3};
         bubbleSort(arr);
 
@@ -423,7 +423,7 @@ For primitive arrays:
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
+    void main() {
         int[] arr = {5, 2, 9, 1, 3};
 
         Arrays.sort(arr);
@@ -435,7 +435,7 @@ public class Main {
 
 Output:
 
-```java
+```python
 [1, 2, 3, 5, 9]
 ```
 
@@ -446,7 +446,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class Main {
-    public static void main(String[] args) {
+    void main() {
         Integer[] arr = {5, 2, 9, 1, 3};
 
         Arrays.sort(arr, Comparator.reverseOrder());
@@ -464,7 +464,7 @@ For lists:
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    void main() {
         List<Integer> numbers = Arrays.asList(5, 2, 9, 1, 3);
 
         Collections.sort(numbers);
@@ -480,7 +480,7 @@ You can also use sort() method of list:
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    void main() {
         List<Integer> numbers = Arrays.asList(5, 2, 9, 1, 3);
 
         numbers.sort(Comparator.reverseOrder());

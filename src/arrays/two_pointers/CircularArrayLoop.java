@@ -20,7 +20,7 @@ import java.util.Set;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/circular-array-loop/description/
+ * LeetCode problem link - https://leetcode.com/problems/circular-array-loop/description/
  * */
 
 /*
@@ -59,7 +59,7 @@ public class CircularArrayLoop {
         return false;
     }
 
-	public static void main(String[] args) {
+	void main() {
 		
 //		int[] nums = { 2,-1,1,2,2 }; // true
 //		int[] nums = { -1,-2,-3,-4,-5,6 }; //false

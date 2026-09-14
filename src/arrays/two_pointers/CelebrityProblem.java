@@ -12,7 +12,7 @@ package arrays.two_pointers;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/find-the-celebrity/
+ * LeetCode problem link - https://leetcode.com/problems/find-the-celebrity/
  * */
 
 /*
@@ -42,7 +42,7 @@ public class CelebrityProblem {
 		return l;
 	}
 
-	public static void main(String[] args) {
+	void main() {
 		int[][] nums = {
 				{0,1,1,0},
 				{0,0,0,0},

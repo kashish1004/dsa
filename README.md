@@ -118,7 +118,7 @@ Algorithms that do not belong to any specific data structure are stored separate
 
 ## 💻 Languages Used
 
-- Java
+- Java (**25.0.4-tem** from [sdkman](https://sdkman.io/))
 
 ---
 

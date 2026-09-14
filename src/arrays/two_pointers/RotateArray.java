@@ -8,7 +8,7 @@ package arrays.two_pointers;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/rotate-array/description/
+ * LeetCode problem link - https://leetcode.com/problems/rotate-array/description/
  * */
 
 /*
@@ -51,7 +51,7 @@ public class RotateArray {
 		}
 	}
 
-	public static void main(String[] args) {
+	void main() {
 		
 		int[] nums = {1,2,3,4,5,6,7};
 		int k = 3;

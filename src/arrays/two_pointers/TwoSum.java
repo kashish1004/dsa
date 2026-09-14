@@ -13,7 +13,7 @@ package arrays.two_pointers;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+ * LeetCode problem link - https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
  * */
 
 /*
@@ -46,7 +46,7 @@ public class TwoSum {
         return ans;
     }
 
-	public static void main(String[] args) {
+	void main() {
 		
 		int[] nums = {2,7,11,15};
 		int target = 9;

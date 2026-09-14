@@ -8,7 +8,7 @@ package arrays.sliding_window.fixed;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/description/
+ * LeetCode problem link - https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/description/
  * */
 
 /*
@@ -39,7 +39,7 @@ public class NumberOfSubArraysAvgGreaterThan {
         return count;
     }
 
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = {2,2,2,2,5,5,5,8};
 		int k = 3;
 		int threshold = 4; 
