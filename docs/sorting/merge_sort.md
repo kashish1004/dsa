@@ -8,25 +8,13 @@ For ascending order:
 
 - Divide the array into two halves.
 - Keep dividing until every part has one element.
-- Merge neighbouring parts in sorted order.
+- Merge neighboring parts in sorted order.
 - Continue until one sorted array remains.
 
-## Example
+## Visual Example
 
-Consider:
-
-~~~text
-[5, 2, 9, 1, 3]
-~~~
-
-Divide into individual elements, then merge in order:
-
-~~~text
-[5] [2] [9] [1] [3]
-[2, 5] [1, 3, 9]
-[1, 2, 3, 5, 9]
-~~~
+![Merge Sort Process](/docs/sorting/images/merge_sort.png)
 
 ## The Main Idea
 
-Merge Sort sorts small arrays first, then combines them.
+Merge sort divides the array into smaller parts, recursively sorts them, and merges them back in order.
