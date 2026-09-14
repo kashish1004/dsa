@@ -36,7 +36,7 @@ public class QuickSort {
 		return i; // Pivot element's correct index
 	}
 	
-	public static void main(String[] args) {
+	void main() {
 		int[] arr = {5, 2, 9, 1, 3};
         quickSort(arr,0,arr.length - 1);
 

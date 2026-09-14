@@ -1,5 +1,7 @@
 package arrays.sliding_window.fixed;
 
+import java.util.Arrays;
+
 /* 
  * Problem Description:
  * 
@@ -16,7 +18,7 @@ package arrays.sliding_window.fixed;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/k-radius-subarray-averages/description/
+ * LeetCode problem link - https://leetcode.com/problems/k-radius-subarray-averages/description/
  * */
 
 /*
@@ -29,13 +31,11 @@ public class KRadiusSubarrayAverages {
 	
 	public static int[] getAverages(int[] nums, int k) {
         int n = nums.length;
-        int ans[] = new int[n];
+        int[] ans = new int[n];
         int actualK = 2*k + 1;
         long windowSum = 0;
 
-        for(int i = 0; i < n; i++){
-            ans[i] = -1;
-        }
+        Arrays.fill(ans, -1);
 
         if(n < actualK){
             return ans;
@@ -54,7 +54,7 @@ public class KRadiusSubarrayAverages {
         return ans;
     }
 
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = {7,4,3,9,1,8,5,2,6};
 		int k = 3;
 		int[] averages = getAverages(nums, k);

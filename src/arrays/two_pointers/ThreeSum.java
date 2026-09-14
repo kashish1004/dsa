@@ -15,7 +15,7 @@ import java.util.Arrays;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/3sum/description/
+ * LeetCode problem link - https://leetcode.com/problems/3sum/description/
  * */
 
 /*
@@ -57,7 +57,7 @@ public class ThreeSum {
 		return new ArrayList<>(set);
     }
 
-	public static void main(String[] args) {
+	void main() {
 		
 		int[] nums = {0,0,0};
 		System.out.println(threeSum(nums));

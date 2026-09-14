@@ -9,7 +9,7 @@ package arrays.searching;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/binary-search/description/
+ * LeetCode problem link - https://leetcode.com/problems/binary-search/description/
  * */
 
 /*
@@ -34,7 +34,7 @@ public class BinarySearch {
         return -1;
     }
 	
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = {-1,0,3,5,9,12};
 		int target = 9;
 		System.out.println(search(nums, target));

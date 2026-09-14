@@ -17,15 +17,17 @@ public class SelectionSort {
 					minIndex = j;
 				}
 			}
-			
-			int temp = arr[i];
-			arr[i] = arr[minIndex];
-			arr[minIndex] = temp;
+
+			if (minIndex != i) {
+				int temp = arr[i];
+				arr[i] = arr[minIndex];
+				arr[minIndex] = temp;
+			}
 			
 		}
 	}
 	
-	public static void main(String[] args) {
+	void main() {
 		int[] arr = {5, 2, 9, 1, 3};
         sort(arr);
 

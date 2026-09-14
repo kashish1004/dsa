@@ -9,7 +9,7 @@ package arrays.sliding_window.fixed;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/maximum-average-subarray-i/description/
+ * LeetCode problem link - https://leetcode.com/problems/maximum-average-subarray-i/description/
  * */
 
 /*
@@ -34,7 +34,7 @@ public class MaximumAverageSubArray {
         return maxSum * 1d / k;
     }
 
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = {1,12,-5,-6,50,3};
 		int k = 4;
 		System.out.println(findMaxAverage(nums, k));

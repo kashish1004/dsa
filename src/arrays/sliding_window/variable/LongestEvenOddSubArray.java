@@ -14,13 +14,13 @@ package arrays.sliding_window.variable;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/description/
+ * LeetCode problem link - https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/description/
  * */
 
 /*
- * Time Complexity:- O(n) – each element is visited at most a constant number of times as left and right pointers move forward through the array.
+ * Time Complexity:- O(n) ï¿½ each element is visited at most a constant number of times as left and right pointers move forward through the array.
  * 
- * Space Complexity:- O(1) – only a few integer variables are used, so no extra space grows with input size.
+ * Space Complexity:- O(1) ï¿½ only a few integer variables are used, so no extra space grows with input size.
  * */
 
 public class LongestEvenOddSubArray {
@@ -49,12 +49,12 @@ public class LongestEvenOddSubArray {
                 right = left;
             }
         }
-        // if all of the elements are under threshold and satisfy the even odd criteria - then the maxLength in above loop will not be calculated
+        // if all the elements are under threshold and satisfy the even odd criteria - then the maxLength in above loop will not be calculated
         maxLength = Math.max(maxLength, right - left);
         return maxLength;
     }
 
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = {3,2,5,4};
 		int threshold = 5; // ans: 3
 //		int[] nums = {2,3,4,5};

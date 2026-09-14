@@ -12,7 +12,7 @@ import java.util.Arrays;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+ * LeetCode problem link - https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
  * */
 
 /*
@@ -24,14 +24,14 @@ import java.util.Arrays;
 public class FirstAndLastIndex {
 
 	public static int[] searchRange(int[] nums, int target) {
-		int ans[] = new int[2];
+		int[] ans = new int[2];
         ans[0] = firstPositionOfElement(nums,target);
         ans[1] = lastPositionOfElement(nums,target);
         
         return ans;
     }
 	
-	private static int firstPositionOfElement(int nums[], int target) {
+	private static int firstPositionOfElement(int[] nums, int target) {
 		int left = 0, right = nums.length - 1, firstIndex = -1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
@@ -51,7 +51,7 @@ public class FirstAndLastIndex {
         return firstIndex;
 	}
 	
-	private static int lastPositionOfElement(int nums[], int target) {
+	private static int lastPositionOfElement(int[] nums, int target) {
 		int left = 0, right = nums.length - 1, lastIndex = -1;
 		while (left <= right) {
             int mid = left + (right - left) / 2;
@@ -71,7 +71,7 @@ public class FirstAndLastIndex {
         return lastIndex;
 	}
 	
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = {5,7,7,8,8,10};
 		int target = 8;
 		System.out.println(Arrays.toString(searchRange(nums, target)));

@@ -8,7 +8,7 @@ public class BubbleSort {
 		int n = arr.length;
 		
 		/*
-		 * In bubble sort, there will be total i passes in which, after each pass, the
+		 * In bubble sort, there will be total i number of passes in which, after each pass, the
 		 * largest unsorted element moves to its correct position at the end of the
 		 * array.
 		 */
@@ -28,7 +28,7 @@ public class BubbleSort {
 		}
 	}
 	
-	public static void main(String[] args) {
+	void main() {
 		int[] arr = {5, 2, 9, 1, 3};
         sort(arr);
 

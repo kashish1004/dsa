@@ -24,7 +24,7 @@ public class InsertionSort {
 		}
 	}
 	
-	public static void main(String[] args) {
+	void main() {
 		int[] arr = {5, 2, 9, 1, 3};
         sort(arr);
 

@@ -9,7 +9,7 @@ public class MergeSort {
 	 */
 	public static void mergeSort(int[] arr, int low, int high) {
         if (low < high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
 
             mergeSort(arr, low, mid);
             mergeSort(arr, mid + 1, high);
@@ -31,12 +31,10 @@ public class MergeSort {
         while (i <= mid) temp[k++] = arr[i++];
         while (j <= high) temp[k++] = arr[j++];
 
-        for (int p = 0; p < temp.length; p++) {
-            arr[low + p] = temp[p];
-        }
+        System.arraycopy(temp, 0, arr, low, temp.length);
     }
 	
-	public static void main(String[] args) {
+    void main() {
 		int[] arr = {5, 2, 9, 1, 3};
         mergeSort(arr,0,arr.length - 1);
 

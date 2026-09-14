@@ -9,7 +9,7 @@ package arrays.sliding_window.variable;
  * */
 
 /*
- * Leetcode problem link - https://leetcode.com/problems/subarray-product-less-than-k/description/
+ * LeetCode problem link - https://leetcode.com/problems/subarray-product-less-than-k/description/
  * */
 
 /*
@@ -36,7 +36,7 @@ public class SubArrayProductsLessThanK {
         return c;
     }
 
-	public static void main(String[] args) {
+	void main() {
 		int[] nums = {10,5,2,6};
 		int k = 100;
 		System.out.println(numSubarrayProductLessThanK(nums, k));
